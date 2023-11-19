@@ -1,0 +1,71 @@
+.login {
+  height: 100%;
+
+  background-color: black;
+  display: grid;
+  place-items: center;
+  object-fit: contain;
+}
+
+.login__container {
+  padding: 100px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.login__container > img {
+  object-fit: contain;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.login__container > h1 {
+  animation: moveinleft 1s ease-out;
+  font-size: 40px;
+  color: #732c75;
+}
+
+.login__container > button {
+  animation: moveintop 0.5s ease-out 0.5s;
+  animation-fill-mode: backwards;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: inherit !important;
+  background-color: #0a8d48;
+  color: white;
+}
+
+.login__container > button:hover {
+  background-color: #421f44;
+  transition: background-color 0.5s;
+}
+
+@keyframes moveinleft {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate(10px);
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveintop {
+  0% {
+    transform: translate(0, 40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}

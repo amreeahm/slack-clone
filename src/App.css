@@ -1,0 +1,59 @@
+body {
+  --slack-color: #3f0f40;
+}
+
+.app__body {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.app__home {
+  position: absolute;
+  top: 70px;
+  right: 330px;
+  font-size: 40px;
+  animation: moveinright 1s ease-out;
+  color: #421f44;
+}
+
+@keyframes moveinright {
+  0% {
+    transform: translate(100px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate(-10px);
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.app__home2 {
+  position: absolute;
+  top: 140px;
+  right: 110px;
+  font-size: 40px;
+  animation: moveinleft 1s ease-out;
+  color: #421f44;
+}
+
+@keyframes moveinleft {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translate(10px);
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
